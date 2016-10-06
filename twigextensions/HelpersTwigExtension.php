@@ -22,6 +22,7 @@ class HelpersTwigExtension extends \Twig_Extension
     {
         return [
             new \Twig_SimpleFunction('randomString', [craft()->helpers_misc, 'randomString']),
+            
         ];
     }
 
@@ -55,6 +56,7 @@ class HelpersTwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('jsonDecode', [craft()->helpers_misc, 'jsonDecode']),
             new \Twig_SimpleFilter('json_decode', [craft()->helpers_misc, 'jsonDecode']),
             new \Twig_SimpleFilter('md5', [craft()->helpers_misc, 'md5'], $options),
+            new \Twig_SimpleFilter('intersect', [craft()->helpers_misc, 'intersect']),
         ];
     }
 }

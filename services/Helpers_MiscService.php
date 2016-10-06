@@ -45,4 +45,23 @@ class Helpers_MiscService extends BaseApplicationComponent
     {
         return md5($value);
     }
+    
+    /**
+     * intersects 2 arrays.
+     *
+     * @param array $values
+     * @param array $order
+     *
+     * @return string
+     */
+    public function intersect($values, $order)
+    {
+	    $results = [];
+	    foreach($order as $key){
+		    if(array_key_exists($key, $values)){
+			    $results[$key] = $values[$key];
+		    }
+	    }
+	    return $results;
+    }
 }
