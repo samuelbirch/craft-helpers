@@ -84,4 +84,10 @@ class Helpers_StringService extends BaseApplicationComponent
     {
         return html_entity_decode($value);
     }
+    
+    
+    public function contains($value, $str)
+    {
+	    return strpos($value, $str) !== false;
+    }
 }

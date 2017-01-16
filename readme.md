@@ -72,6 +72,16 @@ Returns the input string with all HTML entities converted to their applicable ch
 {# outputs "Ein Anführungszeichen ist <b>fett</b>" #}
 ```
 
+#### contains
+
+Returns true/false if the string contains the input string.
+
+```twig
+{{ 'my string'|contains('string') }}
+
+{# outputs true #}
+```
+
 ## Number Helpers
 
 #### numbersToWords( locale )
