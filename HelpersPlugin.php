@@ -25,17 +25,17 @@ class HelpersPlugin extends BasePlugin
 
     public function getDeveloperUrl()
     {
-        return 'https://github.com/carlcs';
+        return 'https://github.com/samuelbirch';
     }
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/carlcs/craft-helpers';
+        return 'https://github.com/samuelbirch/craft-helpers';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/carlcs/craft-helpers/raw/master/releases.json';
+        return 'https://github.com/samuelbirch/craft-helpers/raw/master/releases.json';
     }
 
     // Public Methods
